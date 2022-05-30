@@ -1,17 +1,17 @@
 
 public class Triangle extends Shape {
-	private String name;
+	private String shapeName;
 	private int height;
 	private int base;
 
-	public Triangle(String name, int height, int base) {
-		this.name = name;
+	public Triangle(String shapeName, int height, int base) {
+		this.shapeName = shapeName;
 		this.height = height;
 		this.base = base;
 	}
 
-	public String getName() {
-		return name;
+	public String getshapeName() {
+		return shapeName;
 	}
 
 	public double getHeight() {
@@ -23,12 +23,12 @@ public class Triangle extends Shape {
 	}
 
 	@Override
-	public String Name() {
-		return "My name is : " + getName();
+	public String getName() {
+		return "My name is : " + getshapeName();
 	}
 
 	@Override
-	public String Area() {
+	public String getArea() {
 		return "And my area is : " + (double)((getHeight() * getBase()) / 2);
 		
 	}

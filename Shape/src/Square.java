@@ -1,15 +1,15 @@
 
 public class Square extends Shape {
-	private String name;
+	private String shapeName;
 	private int side;
 
-	public Square(String name, int side) {
-		this.name = name;
+	public Square(String shapeName, int side) {
+		this.shapeName = shapeName;
 		this.side = side;
 	}
 
-	public String getName() {
-		return name;
+	public String getshapeName() {
+		return shapeName;
 	}
 
 	public int getSide() {
@@ -17,12 +17,12 @@ public class Square extends Shape {
 	}
 
 	@Override
-	public String Name() {
-		return "My name is : " + getName();
+	public String getName() {
+		return "My name is : " + getshapeName();
 	}
 
 	@Override
-	public String Area() {
+	public String getArea() {
 		return "And my area is : " + (double)(getSide() * getSide());
 	}
 }

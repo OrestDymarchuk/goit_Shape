@@ -1,18 +1,18 @@
 
 public class Rectangle extends Shape {
 
-	private String name;
+	private String shapeName;
 	private int side1;
 	private int side2;
 
-	public Rectangle(String name, int side1, int side2) {
-		this.name = name;
+	public Rectangle(String shapeName, int side1, int side2) {
+		this.shapeName = shapeName;
 		this.side1 = side1;
 		this.side2 = side2;
 	}
 	
-	public String getName() {
-		return name;
+	public String getshapeName() {
+		return shapeName;
 	}
 	
 	public int getSide1() {
@@ -24,12 +24,12 @@ public class Rectangle extends Shape {
 	}
 
 	@Override
-	public String Name() {
-		return "My name is : " + getName();
+	public String getName() {
+		return "My name is : " + getshapeName();
 	}
 
 	@Override
-	public String Area() {
+	public String getArea() {
 		return "And my area is : " + (double)(getSide1() * getSide2());
 	}
 }

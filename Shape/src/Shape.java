@@ -1,5 +1,7 @@
 
 abstract class Shape {
-	public abstract String Name();
-	public abstract String Area();
+
+	public abstract String getName();
+	public abstract String getArea();
+
 }

@@ -1,16 +1,16 @@
 
 public class Circle extends Shape {
-	private String name;
+	private String shapeName;
 	private float radius;
 	private final double PI = Math.PI;
 
-	public Circle(String name, float radius) {
-		this.name = name;
+	public Circle(String shapeName, float radius) {
+		this.shapeName = shapeName;
 		this.radius = radius;
 	}
 
-	public String getName() {
-		return name;
+	public String getshapeName() {
+		return shapeName;
 	}
 
 	public double getRadius() {
@@ -22,12 +22,12 @@ public class Circle extends Shape {
 	}
 
 	@Override
-	public String Name() {
-		return "My name is : " + getName();
+	public String getName() {
+		return "My name is : " + getshapeName();
 	}
 
 	@Override
-	public String Area() {
+	public String getArea() {
 		double result = getPI() * (getRadius() * getRadius());
 		return "My area is : " + (float) Math.round(result * 100) / 100;
 	}
