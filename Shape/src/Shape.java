@@ -1,7 +1,5 @@
 
-abstract class Shape {
-
+@FunctionalInterface
+interface Shape {
 	public abstract String getName();
-	public abstract String getArea();
-
 }
